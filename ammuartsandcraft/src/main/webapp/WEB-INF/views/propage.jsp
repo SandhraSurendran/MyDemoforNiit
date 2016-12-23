@@ -121,22 +121,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="home.html">Home</a>
+      <a class="navbar-brand" href=" ">Home</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Image.html">Images</a></li>
+        <li class="active"><a href="image">Images</a></li>
         <li><a href="#">Product</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Details <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">About us</a></li>
-            <li><a href="#">Contact action</a></li>
-            <li><a href="#">Address</a></li>
-            <li class="divider"></li>
-            <li><a href="#"></a></li>
+            <li><a href="contact">Contact Us</a></li>
+           
             
           </ul>
         </li>
@@ -148,7 +146,7 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="register.html">Register</a></li>
+        <li><a href="register">Register</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
 			<ul id="login-dp" class="dropdown-menu">
@@ -204,6 +202,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-3">
 				<div class="thumbnail" >
 					<img src="resourse/images/saree1.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>999</label></h3>
@@ -220,6 +219,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/saree2.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>2500</label></h3>
@@ -236,6 +236,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/saree3.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>4999</label></h3>
@@ -253,7 +254,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/saree4.jpg" class="img-responsive">
-
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>3999</label></h3>
@@ -270,6 +271,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/index.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>2000</label></h3>
@@ -286,6 +288,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/index2.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>1500</label></h3>
@@ -294,7 +297,9 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						</div>
+						<p> </p>
+						<p> </p>
+					</div>
 				</div>
 			</div>
 			
@@ -302,6 +307,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/images16.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>3000</label></h3>
@@ -310,7 +316,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -319,6 +326,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/images15.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>3699</label></h3>
@@ -327,7 +335,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purcahse</a>
     						</div>
 						</div>
-						
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -336,6 +345,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/images14.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>968</label></h3>
@@ -344,6 +354,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -361,6 +373,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purcahse</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -369,6 +383,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/download2.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>5550</label></h3>
@@ -377,6 +392,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -385,6 +402,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/download1.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>2550</label></h3>
@@ -393,6 +411,7 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -412,6 +431,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-3">
 				<div class="thumbnail" >
 					<img src="resourse/images/glass1.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>799</label></h3>
@@ -420,6 +440,7 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -428,6 +449,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass2.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>999</label></h3>
@@ -436,7 +458,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						</div>
+						<p> </p>
+					</div>
 				</div>
 			</div>
 			
@@ -444,6 +467,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass3.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>899</label></h3>
@@ -452,6 +476,7 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -469,6 +494,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -477,6 +504,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass11.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>699</label></h3>
@@ -485,6 +513,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purache</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -493,6 +523,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass10.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>499</label></h3>
@@ -501,6 +532,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purcahse</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -509,7 +542,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass12.jpg" class="img-responsive">
-					
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>850</label></h3>
@@ -518,6 +551,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purcahse</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -526,6 +561,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass13.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>500</label></h3>
@@ -534,6 +570,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purcahse</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -542,6 +580,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass14.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>400</label></h3>
@@ -550,6 +589,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -558,6 +599,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass15.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>1399</label></h3>
@@ -566,7 +608,9 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						</div>
+						<p> </p>
+						<p> </p>
+					</div>
 				</div>
 			</div>
 			
@@ -574,6 +618,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass16.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>300</label></h3>
@@ -582,7 +627,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purcahse</a>
     						</div>
 						</div>
-						
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -591,6 +637,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/glass17.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>999</label></h3>
@@ -618,6 +665,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-3">
 				<div class="thumbnail" >
 					<img src="resourse/images/ornm1.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>229</label></h3>
@@ -626,6 +674,7 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -643,7 +692,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						</div>
+						<p> </p>
+					</div>
 				</div>
 			</div>
 			
@@ -651,7 +701,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/oram4.jpg" class="img-responsive">
-					
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>449</label></h3>
@@ -660,7 +710,7 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -669,7 +719,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/orm2.jpg" class="img-responsive">
-					
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>359</label></h3>
@@ -678,7 +728,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -687,7 +738,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/shirt7.jpg" class="img-responsive">
-					
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>199</label></h3>
@@ -696,7 +747,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -705,7 +757,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/shirt2.jpg" class="img-responsive">
-					
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>348</label></h3>
@@ -714,7 +766,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -723,7 +776,8 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/shirt8.jpg" class="img-responsive">
-					<div class="row">
+					<div class="caption">
+						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>270</label></h3>
 							</div>
@@ -731,6 +785,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -739,7 +795,8 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/shirt5.jpg" class="img-responsive">
-											<div class="row">
+					<div class="caption">
+						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>226</label></h3>
 							</div>
@@ -747,6 +804,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -755,7 +814,8 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/shirt6.jpg" class="img-responsive">
-					<div class="row">
+					<div class="caption">
+						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>269</label></h3>
 							</div>
@@ -763,7 +823,9 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						</div>
+						<p> </p>
+						<p> </p>
+					</div>
 				</div>
 			</div>
 			
@@ -771,7 +833,8 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/shirt3.jpg" class="img-responsive">
-			          <div class="row">
+					<div class="caption">
+						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>139</label></h3>
 							</div>
@@ -779,6 +842,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -787,7 +852,8 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/oram3.jpg" class="img-responsive">
-					       <div class="row">
+					<div class="caption">
+						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>279</label></h3>
 							</div>
@@ -795,7 +861,8 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
-						
+						<p> </p>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -804,6 +871,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="thumbnail" >
 					<img src="resourse/images/oram6.jpg" class="img-responsive">
+					<div class="caption">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 col-xs-4 price">
     							<h3 style="margin:5px auto;"><label>999</label></h3>
@@ -812,6 +880,7 @@
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase</a>
     						</div>
 						</div>
+						<p> </p>
 					</div>
 				</div>
 			</div>
@@ -820,6 +889,66 @@
         </div> 
 	</div>
 </div>
+
+					
+<footer style="height:13px;color:#ddd;align:center;background:black">
+<div class="container-fluid bg-4 text-center">
+
+ <div class="row"> 
+	<div class="col-sm-6" >
+              <div id="meta-4" class="widget widgetFooter widget_meta">
+              <h4 class="widgettitle">Subscribe :</h4>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">E-mail :</span>
+                  <input class="form-control" placeholder="Write your email .." type="text">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Phone  :</span>
+                  <input class="form-control" placeholder="+96777000000" type="text">
+                   <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Subscribe !</button>
+                  </span>
+                </div>
+              </div>
+	
+    </div>
+  </div>
+    <div class="col-sm-6">
+	 <h1 class="title-widget">Contact Detail </h1>
+                                
+                            <div class="footerp"> 
+                                
+                                <h2 class="title-median">AMMUS ARTS&CRAFT</h2>
+                                <p><b>Email id:</b> <a href="mailto:info@ammusarts&craft.com">info@ammusarts&carft.com</a></p>
+								<p><b>Postal Address</b></p>
+								<p><b>Phone Numbers : </b>7042827160, </p>
+								<p> 011-27568832, 9868387223</p>
+                            </div>
+	</div>
+
+
+
+    <hr>
+        <div class="text-center center-block">
+            <p class="txt-railway"> www.ammusarts&craft.com </p>
+           
+                 <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com/login"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="https://plus.google.com"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+		</div>
+    <hr>
+
+
+<br />
+<p> Copyright © 2016 Internal. All Rights Reserved.</p>
+</div>
+</footer>
 
 
 </body>

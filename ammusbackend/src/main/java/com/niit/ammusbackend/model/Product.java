@@ -14,8 +14,15 @@ public class Product {
 	private String name;
 	private String brand;
 	private String category;
-	private String desc;
-	public Product() {
+	private int price;
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public Product() 
+	{
 		super();
 		
 	}
@@ -43,14 +50,11 @@ public class Product {
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	public String getDesc() {
-		return desc;
-	}
-	public void setDesc(String desc) {
-		this.desc = desc;
-	}
 	
+	
+	
+	}
 	
 	
 
-}
+

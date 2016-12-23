@@ -1,3 +1,4 @@
+
 package com.niit.ammusbackend.config;
 
 import java.util.Properties;
@@ -14,7 +15,7 @@ import java.util.Properties;
 	import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
 	@Configuration
-	@ComponentScan(basePackages="com.niit.ammusbackend")
+	@ComponentScan(basePackages="com.niit.ammmusbackend")
 	public class AppContext {
 		
 		@Bean
@@ -22,11 +23,12 @@ import java.util.Properties;
 		{
 			BasicDataSource dataSource=new BasicDataSource();
 			dataSource.setDriverClassName("org.h2.Driver");
-			dataSource.setUrl("jdbc:h2:tcp://localhost/~/test/tgs");
+			dataSource.setUrl("jdbc:h2:tcp://localhost/~/ammusartsandcraft1");
 			dataSource.setUsername("sa");
 			dataSource.setPassword("");
 			return dataSource;
-			
+			 
+
 		}
 		@Autowired
 		@Bean
@@ -36,7 +38,7 @@ import java.util.Properties;
 			sessionFactory.setDataSource(dataSource);
 
 			sessionFactory.setHibernateProperties(getHibernateProperties());
-			sessionFactory.setPackagesToScan(new String[]{"com.niit.tgsbackend.model"});
+			sessionFactory.setPackagesToScan(new String[]{"com.niit.ammusbackend.model"});
 			return sessionFactory;
 			
 		}

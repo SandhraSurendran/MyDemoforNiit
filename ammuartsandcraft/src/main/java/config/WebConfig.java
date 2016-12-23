@@ -13,13 +13,14 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 public class WebConfig extends WebMvcConfigurerAdapter{
 	
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/resourse/**").addResourceLocations("/resourse/images/");
+		registry.addResourceHandler("/resourse/**").addResourceLocations("/resourse/");
 	}
 	
 	
 	@Bean
 	public InternalResourceViewResolver getViewResolver(){
 		InternalResourceViewResolver viewResolver=new InternalResourceViewResolver();
+		System.out.println("web config");
 		viewResolver.setPrefix("/WEB-INF/views/");
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
