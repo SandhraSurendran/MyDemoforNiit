@@ -12,7 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.niit.ammusbackend.model.Product;
 @Repository("productDAO")
 @Transactional
-@EnableTransactionManagement
 public class ProductDAOImpl implements ProductDAO{
 
 	@Autowired

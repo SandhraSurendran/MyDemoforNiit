@@ -123,7 +123,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="image">Images</a></li>
-        <li><a href="propage">Product</a></li>
+        <li><a href="product">Product</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Details <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">

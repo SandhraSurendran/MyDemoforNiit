@@ -1,11 +1,17 @@
 package com.niit.ammusbackend;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
+
 import com.niit.ammusbackend.config.AppContext;
 import com.niit.ammusbackend.model.Product;
 import com.niit.ammusbackend.model.User;
 import com.niit.ammusbackend.dao.ProductDAO;
 import com.niit.ammusbackend.dao.UserDAO;
+import com.niit.ammusbackend.dao.UserOrderDAO;
+import com.niit.ammusbackend.model.UserOrder;
+import com.niit.ammusbackend.model.Cart;
+import com.niit.ammusbackend.model.Item;
+import com.niit.ammusbackend.dao.ItemDAO;
 
 /**
  * Hello world!
@@ -18,6 +24,8 @@ public class App
         AbstractApplicationContext context=new AnnotationConfigApplicationContext(AppContext.class);
         ProductDAO productDAO=(ProductDAO)context.getBean("productDAO");
         UserDAO userDAO=(UserDAO) context.getBean("userDAO");
+        ItemDAO itemDAO = (ItemDAO) context.getBean("itemDAO");
+		UserOrderDAO userorderDAO=(UserOrderDAO) context.getBean("userorderDAO");
         User user=new User();
         user.setName("sura1");
         user.setPassword("sura1");

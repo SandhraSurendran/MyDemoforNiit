@@ -1,12 +1,23 @@
 package controller;
+import javax.enterprise.inject.Model;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.google.gson.Gson;
+import com.niit.ammusbackend.dao.ProductDAO;
+import com.niit.ammusbackend.model.Product;
+
+import antlr.collections.List;
+
 @Controller
 public class MyController 
 {
+	@Autowired
+	ProductDAO productDAO;
 	
 	@RequestMapping("/")
 	public String indexPage()
@@ -61,12 +72,22 @@ public class MyController
 		ModelAndView model= new ModelAndView("image");
 		return model;
 	}
-	@RequestMapping("/propage")
-	public ModelAndView propage()
-	{
-		System.out.println("propage page is runing");
-		ModelAndView model= new ModelAndView("propage");
-		return model;
+	@RequestMapping(value = "/product", method = RequestMethod.GET)
+	public String Admin(Model model) {
+	
+		List<Product> products = productDAO.listProducts();
+		System.out.println("hhhhhhhhhhhhhhhhhhhhhhhh");
+		String listproducts = new Gson().toJson(products);
+		System.out.println("hhhhhhhhhhhhhhhhhhhhhhhh"+ productDAO.listProducts().size());
+		for(Product p: products)
+		{
+			System.out.println("pppppppppppppppppppppppppp"+p.getId());
+			
+		}
+		
+		model.addAttribute("listproducts",listproducts);
+		return "product";
+
 	}
 	
 }

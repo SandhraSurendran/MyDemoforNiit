@@ -13,12 +13,15 @@ import java.util.Properties;
 	import org.springframework.context.annotation.Configuration;
 	import org.springframework.orm.hibernate5.HibernateTransactionManager;
 	import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 	@Configuration
+	@EnableTransactionManagement
+
 	@ComponentScan(basePackages="com.niit.ammmusbackend")
 	public class AppContext {
 		
-		@Bean
+		@Bean("dataSource")
 		public DataSource geth2DataSource()
 		{
 			BasicDataSource dataSource=new BasicDataSource();
@@ -30,7 +33,7 @@ import java.util.Properties;
 			 
 
 		}
-		@Autowired
+		
 		@Bean
 		public  LocalSessionFactoryBean getSessionFactory(DataSource dataSource)
 		{
@@ -50,7 +53,7 @@ import java.util.Properties;
 			properties.setProperty("hibernate.hbm2ddl.auto","update");
 			return properties;
 		}
-		@Autowired
+		
 		@Bean
 		public HibernateTransactionManager geTransactionManager(SessionFactory sessionFactory)
 		{
