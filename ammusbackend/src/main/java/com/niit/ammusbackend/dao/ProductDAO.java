@@ -4,13 +4,19 @@ import java.util.List;
 
 import com.niit.ammusbackend.model.Product;
 
-public interface ProductDAO {
-	public void addProduct(Product p);
-	public void updateProduct(Product p);
-	public List<Product> listProducts();
-	public Product getPersonById(int id);
-	public void removePerson(int id);
-	
+public interface ProductDao {
 
+	void add(Product product);
+
+	void update(Product product);
+
+	void delete(Product product);
+
+	Product getById(int productId);
+
+	List<Product> getByBrand(String brand);
+
+	List<Product> getByCategory(String category);
+
+	List<Product> list();
 }
-

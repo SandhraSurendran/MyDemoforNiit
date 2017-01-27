@@ -1,6 +1,7 @@
 package com.niit.ammusbackend.model;
 
-import javax.persistence.CascadeType;
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -8,36 +9,49 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+import org.hibernate.validator.constraints.Length;
+
+@SuppressWarnings("serial")
 @Entity
-public class ShippingAddress {
+public class ShippingAddress implements Serializable {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int useraddressid;
-
-	private String phonenumber;
+	private int addressId;
+	private String line1;
+	private String line2;
 	private String city;
-	private String district;
 	private String state;
-	private String pin;
+	private String zipCode;
+	@Length(min = 10)
+	private String mobile;
 
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "userid")
-	User user;
+	@OneToOne
+	@JoinColumn(name = "userId")
+	private User user;
 
-	public int getUseraddressid() {
-		return useraddressid;
+	public int getAddressId() {
+		return addressId;
 	}
 
-	public void setUseraddressid(int useraddressid) {
-		this.useraddressid = useraddressid;
+	public void setAddressId(int addressId) {
+		this.addressId = addressId;
 	}
 
-	public String getPhonenumber() {
-		return phonenumber;
+	public String getLine1() {
+		return line1;
 	}
 
-	public void setPhonenumber(String phonenumber) {
-		this.phonenumber = phonenumber;
+	public void setLine1(String line1) {
+		this.line1 = line1;
+	}
+
+	public String getLine2() {
+		return line2;
+	}
+
+	public void setLine2(String line2) {
+		this.line2 = line2;
 	}
 
 	public String getCity() {
@@ -48,14 +62,6 @@ public class ShippingAddress {
 		this.city = city;
 	}
 
-	public String getDistrict() {
-		return district;
-	}
-
-	public void setDistrict(String district) {
-		this.district = district;
-	}
-
 	public String getState() {
 		return state;
 	}
@@ -64,12 +70,12 @@ public class ShippingAddress {
 		this.state = state;
 	}
 
-	public String getPin() {
-		return pin;
+	public String getZipCode() {
+		return zipCode;
 	}
 
-	public void setPin(String pin) {
-		this.pin = pin;
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
 	}
 
 	public User getUser() {
@@ -78,6 +84,14 @@ public class ShippingAddress {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
 	}
 
 }

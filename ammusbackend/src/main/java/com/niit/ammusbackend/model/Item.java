@@ -1,5 +1,7 @@
 package com.niit.ammusbackend.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,26 +9,32 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+@SuppressWarnings("serial")
 @Entity
-public class Item {
+public class Item implements Serializable {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int itemid;
+	private int itemId;
+
 	@ManyToOne
-	@JoinColumn(name = "pid")
+	@JoinColumn(name = "productId")
 	private Product product;
+
 	private int quantity;
-	private double itemtotal;
+
+	private double itemTotal;
+
 	@ManyToOne
-	@JoinColumn(name = "cartid")
+	@JoinColumn(name = "cartId")
 	private Cart cart;
 
-	public int getItemid() {
-		return itemid;
+	public int getItemId() {
+		return itemId;
 	}
 
-	public void setItemid(int itemid) {
-		this.itemid = itemid;
+	public void setItemId(int itemId) {
+		this.itemId = itemId;
 	}
 
 	public Product getProduct() {
@@ -45,12 +53,12 @@ public class Item {
 		this.quantity = quantity;
 	}
 
-	public double getItemtotal() {
-		return itemtotal;
+	public double getItemTotal() {
+		return itemTotal;
 	}
 
-	public void setItemtotal(double itemtotal) {
-		this.itemtotal = itemtotal;
+	public void setItemTotal(double itemTotal) {
+		this.itemTotal = itemTotal;
 	}
 
 	public Cart getCart() {

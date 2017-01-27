@@ -1,5 +1,7 @@
 package com.niit.ammusbackend.model;
 
+import java.io.Serializable;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,24 +10,26 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+@SuppressWarnings("serial")
 @Entity
-public class UserOrder {
+public class UserOrder implements Serializable {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int userorderid;
+	private int userOrderId;
 	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "cartid")
+	@JoinColumn(name = "cartId")
 	private Cart cart;
-	@OneToOne
-	@JoinColumn(name = "userid")
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "userId")
 	private User user;
 
-	public int getUserorderid() {
-		return userorderid;
+	public int getUserOrderId() {
+		return userOrderId;
 	}
 
-	public void setUserorderid(int userorderid) {
-		this.userorderid = userorderid;
+	public void setUserOrderId(int userOrderId) {
+		this.userOrderId = userOrderId;
 	}
 
 	public Cart getCart() {

@@ -2,8 +2,9 @@ package com.niit.ammusbackend.dao;
 
 import com.niit.ammusbackend.model.UserOrder;
 
-public interface UserOrderDAO {
+public interface UserOrderDao {
 
-	public void addOrder(UserOrder userOrder);
-
+	void add(UserOrder userOrder);
+	
+	UserOrder getUserOrderById(int userOrderId);
 }
