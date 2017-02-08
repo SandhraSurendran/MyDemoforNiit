@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.niit.ammusbackend.dao.ShippingAddressDao;
 import com.niit.ammusbackend.model.ShippingAddress;
 
-@Repository
+@Repository("ShippingAddressDao")
 @EnableTransactionManagement
 @Transactional
 public class ShippingAddressDaoImpl implements ShippingAddressDao {

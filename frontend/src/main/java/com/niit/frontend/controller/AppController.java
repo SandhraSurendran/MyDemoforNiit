@@ -33,11 +33,14 @@ public class AppController {
 		ModelAndView view = new ModelAndView("register");
 		return view;
 	}
-	@RequestMapping("/images")
-	public ModelAndView images() {
-		ModelAndView view = new ModelAndView("images");
+	
+	
+	@RequestMapping("/contact")
+	public ModelAndView contact() {
+		ModelAndView view = new ModelAndView("contact");
 		return view;
 	}
+	
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView login(@RequestParam(value = "error", required = false) String error, @RequestParam(value = "logout", required = false) String logout) {
@@ -79,5 +82,4 @@ public class AppController {
 		return "productDetails";
 
 	}
-
 }
