@@ -4,8 +4,8 @@ import com.niit.ammusbackend.model.ShippingAddress;
 
 public interface ShippingAddressDao {
 
-	void add(ShippingAddress shippingAddress);
-	
+	void addAddress(ShippingAddress shippingAddress);
+	 
 	void update(ShippingAddress shippingAddress);
 	
 	//ShippingAddress getByUserId(int userId);

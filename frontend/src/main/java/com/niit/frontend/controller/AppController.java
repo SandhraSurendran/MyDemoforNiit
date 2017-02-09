@@ -34,6 +34,12 @@ public class AppController {
 		return view;
 	}
 	
+	@RequestMapping("/images")
+	public ModelAndView images() {
+		ModelAndView view = new ModelAndView("images");
+		return view;
+	}
+	
 	
 	@RequestMapping("/contact")
 	public ModelAndView contact() {

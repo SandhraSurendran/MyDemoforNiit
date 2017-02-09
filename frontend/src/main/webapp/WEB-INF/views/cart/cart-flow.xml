@@ -19,7 +19,7 @@ http://www.springframework.org/schema/webflow/spring-webflow.xsd">
 	</view-state>
 
 	<action-state id="shippingAddressMethod">
-		<evaluate expression="shippingAddressDao.add(order.user)"></evaluate>
+		<evaluate expression="ShippingAddressDao.addAddress(order.user.shippingAddress)"></evaluate>
 		<transition on="success" to="checkoutconfirmationMethod"></transition>
 	</action-state>
 

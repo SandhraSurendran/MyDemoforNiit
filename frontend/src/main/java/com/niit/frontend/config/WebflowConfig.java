@@ -35,6 +35,6 @@ public class WebflowConfig extends AbstractFlowConfiguration {
 	
 	@Bean
 	public FlowDefinitionRegistry flowRegistry() {
-		return getFlowDefinitionRegistryBuilder().addFlowLocation("/WEB-INF/views/flow/cart-flow.xml", "cartFlow").build();
+		return getFlowDefinitionRegistryBuilder().addFlowLocation("/WEB-INF/views/cart/cart-flow.xml", "cartFlow").build();
 	}
 }

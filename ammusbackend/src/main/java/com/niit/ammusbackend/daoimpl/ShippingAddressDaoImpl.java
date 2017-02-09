@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.ammusbackend.dao.ShippingAddressDao;
 import com.niit.ammusbackend.model.ShippingAddress;
-
+ 
 @Repository("ShippingAddressDao")
 @EnableTransactionManagement
 @Transactional
@@ -18,9 +18,9 @@ public class ShippingAddressDaoImpl implements ShippingAddressDao {
 	SessionFactory sessionFactory;
 	
 	@Transactional
-	public void add(ShippingAddress shippingAddress) {
+	public void addAddress(ShippingAddress shippingAddress) {
 		sessionFactory.getCurrentSession().saveOrUpdate(shippingAddress);
-	}
+	} 
 
 	@Transactional
 	public void update(ShippingAddress shippingAddress) {
