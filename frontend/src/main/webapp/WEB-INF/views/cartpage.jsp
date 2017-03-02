@@ -25,7 +25,7 @@
 							
 							<th>Brand</th>
 							<th>model</th>
-							<th>Pricee</th>
+							<th>Price</th>
 							<th>Item Quantity</th>
 							<th>Item Total</th>
 						</tr>
