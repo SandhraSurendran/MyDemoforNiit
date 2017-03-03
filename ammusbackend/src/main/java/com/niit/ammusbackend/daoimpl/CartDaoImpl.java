@@ -37,4 +37,10 @@ public class CartDaoImpl implements CartDao {
 		return cart;
 	}
 
+	@Override
+	public Cart getByUserId(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

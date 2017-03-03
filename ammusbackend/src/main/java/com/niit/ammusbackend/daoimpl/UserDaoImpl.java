@@ -13,7 +13,7 @@ import com.niit.ammusbackend.model.ShippingAddress;
 import com.niit.ammusbackend.model.Cart;
 import com.niit.ammusbackend.model.User;
 
-@Repository
+@Repository("userDao")
 @Transactional
 @EnableTransactionManagement
 public class UserDaoImpl implements UserDao {

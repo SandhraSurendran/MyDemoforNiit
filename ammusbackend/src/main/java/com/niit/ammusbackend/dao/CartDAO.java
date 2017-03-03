@@ -10,5 +10,5 @@ public interface CartDao {
 	
 	Cart getById(int cartId);
 	
-	Cart getByUserId(int userId);
+	Cart getByUserId(String string);
 }
