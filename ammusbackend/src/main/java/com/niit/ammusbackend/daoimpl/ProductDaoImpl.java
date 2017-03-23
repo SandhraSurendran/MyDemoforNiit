@@ -3,6 +3,8 @@ package com.niit.ammusbackend.daoimpl;
 import java.util.List;
 
 import org.hibernate.SessionFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -15,6 +17,8 @@ import com.niit.ammusbackend.model.Product;
 @EnableTransactionManagement
 @Transactional
 public class ProductDaoImpl implements ProductDao {
+	
+	Logger log = LoggerFactory.getLogger(ProductDaoImpl.class);
 
 	@Autowired
 	SessionFactory sessionFactory;

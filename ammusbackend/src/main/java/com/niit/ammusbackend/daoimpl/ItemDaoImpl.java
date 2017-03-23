@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -18,6 +20,9 @@ import com.niit.ammusbackend.model.Item;
 @EnableTransactionManagement
 @Transactional
 public class ItemDaoImpl implements ItemDao {
+	
+	Logger log = LoggerFactory.getLogger(ItemDaoImpl.class);
+
 
 	@Autowired
 	SessionFactory sessionFactory;

@@ -7,15 +7,20 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.niit.ammusbackend.dao.ItemDao;
-public class TestItemDao {
+import com.niit.ammusbackend.dao.CartDao;
+import com.niit.ammusbackend.model.Cart;
+public class TestCartDao {
 
 	@Autowired
-	ItemDao itemDao;
+	CartDao cartDao;
 
 	
 
 	AnnotationConfigApplicationContext context;
+
+
+
+	
 
 	@Before
 	public void init() {
@@ -23,14 +28,14 @@ public class TestItemDao {
 		context = new AnnotationConfigApplicationContext();
 		context.scan("com.niit");
 		context.refresh();
-		itemDao = (ItemDao) context.getBean("itemDao");
+		cartDao = (CartDao) context.getBean("cartDao");
 	}
 
 	@Test
 
 	public void UserTestCase() {
-		int size = itemDao.getCartItems(0).size();
-		assertEquals("supplier list test case ", 0, size);
+		int size = cartDao.getById(1).getCartId();
+		assertEquals("supplier list test case ", 1, size);
 
 	}
 

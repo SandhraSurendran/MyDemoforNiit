@@ -74,5 +74,4 @@ public class AdminController {
 		productDao.delete(productDao.getById(id));
 		return "redirect:/productAdmin";
 	}
-	
 }

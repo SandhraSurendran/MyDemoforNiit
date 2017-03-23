@@ -33,8 +33,8 @@ public class Cart implements Serializable {
 		return cartId;
 	}
 
-	public void setCartId(int cartId) {
-		this.cartId = cartId;
+	public int setCartId(int cartId) {
+		return this.cartId = cartId;
 	}
 
 	public List<Item> getItems() {
